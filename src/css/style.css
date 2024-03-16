@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --1: #211c6a;
+  --2: #eff396;
+  --3: #74e291;
+  --4: #59b4c3;
+  --5: #3127b87a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black !important;
+  width: 100%;
+}
+
+/* star navbar */
+nav {
+  background-color: var(--1);
+}
+
+nav .navbar-brand {
+  font-size: 2rem;
+}
+
+section {
+  margin: 2rem;
+}
+
+.nav-link {
+  color: white !important;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: aqua !important;
+  transition: 0.5s ease-in-out;
+}
+.nav-link:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px aqua !important;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.nav-link:hover:after {
+  transform: scaleX(1);
+}
+/* End navbar */
+
+/* Start main */
+main {
+  margin-top: 6rem;
+  color: white;
+}
+
+.iniya {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.185) !important;
+  color: white !important;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.iniya .card h2 {
+  text-align: center;
+}
+
+.list-group-item {
+  background-color: rgba(255, 255, 255, 0.322) !important;
+}
+
+.isibuku {
+  height: 100vh;
+}
+
+.bi-heart-fill {
+  color: red;
+}
+
+.footer-name {
+  text-decoration: none;
+  color: white;
+}
+
+.Daftar-buku {
+  max-height: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 30%;
+  background-color: var(--5);
+}
+/* End main */
+
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
